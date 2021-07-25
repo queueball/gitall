@@ -35,9 +35,7 @@ def controller(params):
         try:
             result = subprocess.check_output(cmd, cwd=dir_, shell=True)
             if result not in CHECKS:
-                click.echo(
-                    ("" if first else "\n") + f'>>> { cmd } { dir_ }'
-                )
+                click.echo(("" if first else "\n") + f">>> { cmd } { dir_ }")
                 click.echo(result[:-1].decode())
                 first = False
         except Exception as e:
