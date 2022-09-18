@@ -44,3 +44,5 @@ def controller(params):
 
 if __name__ == "__main__":
     controller()
+
+# AUTOBIN: gitall
