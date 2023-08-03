@@ -22,7 +22,7 @@ def controller(params):
         params = ["stat"]
     paths = []
     try:
-        with open(pathlib.Path("~/.gitall.json").expanduser()) as f:
+        with open(pathlib.Path("~/.config/.gitall.json").expanduser()) as f:
             paths = json.load(f)["paths"]
     finally:
         pass
